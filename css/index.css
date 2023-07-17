@@ -1,0 +1,499 @@
+/* 大圖片 */
+
+.news h2,
+.dessert h2 {
+    border-bottom: 2px solid #309D4E;
+    color: #309D4E;
+}
+
+.lineup h2 {
+    color: #EBF1D6;
+    border-bottom: 2px solid #EBF1D6;
+}
+
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.main {
+    height: 680px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #309D4E;
+    position: relative;
+}
+
+.slides {
+    width: 500%;
+    height: 600px;
+    display: flex;
+
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    height: 700px;
+    /* opacity: 0.5; */
+}
+
+/* 手動 */
+.navigation-manual {
+    position: absolute;
+    display: flex;
+    width: 1200px;
+    margin-top: 640px;
+    justify-content: center;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    bottom: 20px;
+
+}
+
+.manual-btn {
+    border: 2px solid rgb(209, 205, 205);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px
+}
+
+.manual-btn:hover {
+    background-color: #309D4E;
+}
+
+#radio1:checked~.first {
+    margin-left: 0%;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+/* 手動end */
+
+/* 自動 */
+
+.navigation-auto {
+    display: flex;
+    position: absolute;
+    width: 1200px;
+    margin-top: 640px;
+    justify-content: center;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    bottom: 20px;
+}
+
+.navigation-auto div {
+    border: 1px solid #EBF1D6;
+    padding: 2.8px;
+    border-radius: 10px;
+    transition: 1s;
+    width: 6px;
+    height: 6px;
+
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background-color: #309D4E;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background-color: #309D4E;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background-color: #309D4E;
+}
+
+
+/* 最新消息 */
+
+.news {
+    background-color: #EBF1D6;
+    height: 600px;
+
+}
+
+.news-area {
+    margin: auto;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+
+
+}
+
+.news-tt {
+    margin: 50px;
+    margin-top: 20px;
+
+}
+
+.news-list {
+    overflow: scroll;
+    width: 750px;
+    height: 400px;
+}
+
+.news-list::-webkit-scrollbar-corner {
+    background-color: #EBF1D6;
+}
+
+.news-list::-webkit-scrollbar-thumb {
+    background-color: #EBF1D6;
+    border: 2px solid #309D4E;
+}
+
+.news-list::-webkit-scrollbar-track {
+    background-color: #309D4E;
+}
+
+.news-list::-webkit-scrollbar {
+    background-color: #309D4E;
+    width: 10px;
+    height: 0px;
+
+}
+
+
+.news-list ul {
+    padding: 2px;
+    border-top: 1px solid #00A21E;
+    margin-bottom: 5px;
+}
+
+.news-list ul:first-child,
+ul:last-child {
+    border-top: 1.5px solid #00A21E;
+}
+
+.news-list .time {
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+}
+
+.news-list .time span:first-of-type {
+    display: inline-block;
+    margin-left: 15px;
+    color: #ffffff;
+    width: 80px;
+    text-align: center;
+}
+
+.news .important {
+    background-color: #FE8E8E;
+    padding: 3px;
+}
+
+.news .event {
+    background-color: #EFE95f;
+    padding: 5px;
+}
+
+.news .products {
+    background-color: #5fc6ef;
+    padding: 5px;
+}
+
+.news-list .list-item {
+    position: relative;
+    padding-bottom: 5px;
+    margin: 5px;
+    width: 50px;
+}
+
+.news-list .list-item p {
+    letter-spacing: 16.5%;
+}
+
+.news-list .list-item:hover {
+    color: #309D4E;
+}
+
+.news-list .list-item:hover .arrow {
+    transform: translateX(10px);
+}
+
+.list-item .arrow {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #309D4E;
+    border-radius: 1000px;
+    position: absolute;
+    left: 680px;
+    top: 40px;
+    transition: 0.25s ease-in-out 0s;
+}
+
+.arrow::before {
+    content: "";
+    display: block;
+    border-right: 2px solid #EBF1D6;
+    border-bottom: 2px solid #EBF1D6;
+    width: 7px;
+    height: 7px;
+    transform: rotate(-45deg);
+    position: absolute;
+    z-index: 999;
+    bottom: 6px;
+    right: 6.5px;
+}
+
+.news-more {
+    background-color: #309D4E;
+    padding: 5px;
+    width: 120px;
+    height: 35px;
+    margin: auto;
+    margin-left: 70%;
+    margin-top: 30px;
+    border-radius: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-more a,
+.tea-btn a {
+    color: #ffffff;
+    padding: 5px;
+
+}
+
+.news-more:hover,
+.dessert-more:hover,
+.make-tea .tea-btn:hover {
+    color: #EBF1D6;
+    opacity: 0.9;
+}
+
+/* 最新消息end */
+
+/* 精選商品 */
+
+.lineup {
+    background-color: #309D4E;
+    padding-bottom: 50px;
+}
+
+.lineup-area {
+    width: 1200px;
+    margin: auto;
+}
+
+.lineup-tt,
+.dessert-tt {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.lineup-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+}
+
+.lineup-pic {
+    margin-inline: 60px;
+    margin-block: 50px;
+    position: relative;
+
+
+}
+
+.lineup-pic img {
+    width: 100%;
+    vertical-align: top;
+    border-radius: 50px;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .5));
+
+}
+
+.lineup-pic a::after {
+    content: "點撃選購";
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 1000px;
+    background-color: #EBF1D6;
+    font-size: 24px;
+    color: #309D4E;
+    letter-spacing: 5px;
+    text-align: center;
+    line-height: 260px;
+    position: absolute;
+    left: 100px;
+    top: -100px;
+    transition: .7s;
+    opacity: 0;
+}
+
+.lineup span {
+    display: block;
+    background-color: #EBF1D6;
+    color: #309D4E;
+    font-size: 24px;
+    letter-spacing: 2px;
+    width: fit-content;
+    padding: 10px;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 0.5px;
+}
+
+
+.lineup-pic:hover {
+    opacity: 0.7;
+}
+
+.lineup-pic:hover a::after {
+    transform: translateY(125px);
+    opacity: 0.8;
+}
+
+/* 精選商品結束 */
+
+/* 甜點區 */
+.dessert {
+    background-color: #EBF1D6;
+    padding-bottom: 50px;
+}
+
+.dessert-list {
+    width: 1200px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.dessert-pic {
+    margin: 30px;
+}
+
+.dessert-pic:hover {
+    opacity: 0.79;
+}
+
+.dessert-pic img {
+    vertical-align: top;
+    border-radius: 60%;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .5));
+}
+
+.dessert-txt {
+    text-align: center;
+    width: 270px;
+    letter-spacing: 16.5%;
+
+}
+
+.dessert-txt h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    margin-left: 70px;
+}
+
+.dessert-txt p {
+    line-height: 30px;
+    width: 180px;
+    margin-left: 70px;
+}
+
+.dessert-more {
+    background-color: #309D4E;
+    padding: 5px;
+    width: 150px;
+    height: 50px;
+    margin: auto;
+    border-radius: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.dessert-more a {
+    color: #ffffff;
+    padding: 5px;
+}
+
+/* 甜點結束 */
+
+/* 泡茶 */
+
+.make-tea {
+    background-image: url(../img/make-tea.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: left 60% bottom 85%;
+    height: 350px;
+}
+
+.make-tea-area {
+    margin: auto;
+    text-align: center;
+
+}
+
+.make-tea-area h2 {
+    color: #EBF1D6;
+    font-size: 30px;
+    padding: 30px;
+    letter-spacing: 2px;
+}
+
+.make-tea-area p {
+    color: #EBF1D6;
+    letter-spacing: 16.5%;
+    line-height: 28px;
+    margin-top: 10px;
+}
+
+.make-tea-area .tea-btn {
+    background-color: #309D4E;
+    padding: 5px;
+    width: 150px;
+    height: 50px;
+    margin: auto;
+    border-radius: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* 泡茶結束 */

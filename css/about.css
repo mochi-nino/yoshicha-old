@@ -1,0 +1,40 @@
+.main {
+    background-image: url(../img/header-bg04.jpg);
+    height: 255px;
+
+}
+
+.main .title {
+    text-align: center;
+    padding-top: 120px;
+    font-size: 30px;
+    color: #309D4E;
+}
+
+/* 麵包屑 */
+
+.breadcrumb {
+    width: 1200px;
+    margin: auto;
+}
+
+.breadcrumb ul {
+    display: flex;
+    margin: 15px;
+}
+
+.breadcrumb li {
+    padding-block: 5px;
+}
+
+.breadcrumb ul li:not(:first-child)::before {
+    content: "/";
+    color: #309D4E;
+    margin-left: 8px;
+}
+
+.breadcrumb a {
+    color: #309D4E;
+}
+
+/* 麵包屑end */

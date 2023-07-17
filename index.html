@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吉茶</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="content">
+            <a href="index.html">
+                <img src="img/logo.png" class="logo" alt="logo">
+            </a>
+            <!-- 左側工具列 -->
+            <div class="header-group">
+                <div class="search">
+                    <input type="search" placeholder="搜尋">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass" style="color:#ffffff;"></i>
+                    </button>
+                </div>
+                <div class="cart">
+                    <a href="">
+                        <i class="fa-solid fa-cart-shopping" style="color: #309d4e;"></i>
+                    </a>
+                </div>
+                <div class="login">
+                    <a href="">
+                        <i class="fa-solid fa-user" style="color: #309d4e;"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- 導覽列 -->
+            <nav class="menu">
+                <div class="item">
+                    <a href="news.html">
+                        <img src="img/news.png" alt="最新消息">
+                        <p>最新消息</p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="about.html">
+                        <img src="img/about.png" alt="關於我們">
+                        <p>關於我們</p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <img src="img/shopping.png" alt="商品一覽">
+                        <p>商品一覽</p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <img src="img/tea.png" alt="簡單泡杯茶">
+                        <p>簡單泡杯茶</p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <img src="img/shop.png" alt="聯絡我們">
+                        <p>聯絡我們</p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <img src="img/qaz.png" alt="常見問題">
+                        <p>常見問題</p>
+                    </a>
+                </div>
+    </header>
+
+    <article>
+        <!-- 首頁圖 -->
+        <div class="main">
+            <div class="slides">
+                <!-- 按鈕 -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <!-- 圖片 -->
+                <div class="slide first">
+                    <img src="img/header-pic01.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/header-pic02.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/header-pic03.jpg" alt="">
+                </div>
+                <!-- 自動換張 -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+                <!-- 手動換張 -->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+
+    <!-- 最新消息 -->
+    <section class="news">
+        <div class="news-area">
+            <div class="news-tt">
+                <h2>最新消息</h2>
+            </div>
+            <div class="news-list">
+                <ul>
+                    <li>
+                        <a href="" class="list-item">
+                            <div class="time">
+                                <time>2023/7/12</time><span class="important">重要</span>
+                            </div>
+                            <p>全新春芽茶上市！品味來自茶葉的奇蹟</p>
+                            <span class="arrow"></span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="" class="list-item">
+                            <div class="time">
+                                <time>2023/7/12</time><span class="event">活動</span>
+                            </div>
+                            <p>吉茶茶香嘉年華！限時優惠、品茶體驗，愛上茶葉的魅力</p>
+                            <span class="arrow"></span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="" class="list-item">
+                            <div class="time">
+                                <time>2023/7/12</time><span class="important">重要</span>
+                            </div>
+                            <p>實體店鋪開幕！品味純正的吉茶開始服務</p>
+                            <span class="arrow"></span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="" class="list-item">
+                            <div class="time">
+                                <time>2023/7/12</time><span class="event">活動</span>
+                            </div>
+                            <p>茶葉試飲活動！探索茶的無限風味</p>
+                            <span class="arrow"></span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="" class="list-item">
+                            <div class="time">
+                                <time>2023/7/12</time><span class="important">重要</span>
+                            </div>
+                            <p>內容</p>
+                            <span class="arrow"></span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="" class="list-item">
+                            <div class="time">
+                                <time>2023/7/12</time><span class="important">重要</span>
+                            </div>
+                            <p>內容</p>
+                            <span class="arrow"></span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="" class="list-item">
+                            <div class="time">
+                                <time>2023/7/12</time><span class="products">商品</span>
+                            </div>
+                            <p>內容</p>
+                            <span class="arrow"></span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="" class="list-item">
+                            <div class="time">
+                                <time>2023/7/12</time><span class="products">商品</span>
+                            </div>
+                            <p>內容</p>
+                            <span class="arrow"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="news-more">
+            <a href="news.html">顯示全部</a>
+        </div>
+    </section>
+
+    <section class="lineup">
+        <div class="lineup-area">
+            <div class="lineup-tt">
+                <h2>精選商品</h2>
+            </div>
+            <div class="lineup-item">
+                <div class="lineup-pic">
+                    <a href="">
+                        <img src="img/tea-box.jpg" alt="茶葉禮盒">
+                        <span class="tilte">茶葉禮盒</span>
+                    </a>
+                </div>
+                <div class="lineup-pic">
+                    <a href="">
+                        <img src="img/tea-tw.jpg" alt="台灣茶">
+                        <span class="tilte">台灣茶</span>
+                    </a>
+                </div>
+                <div class="lineup-pic">
+                    <a href="">
+                        <img src="img/tea-jp.jpg" alt="日本茶">
+                        <span class="tilte">日本茶</span>
+                    </a>
+                </div>
+                <div class="lineup-pic">
+                    <a href="">
+                        <img src="img/tea-tool.jpg" alt="茶具用品">
+                        <span class="tilte">茶具用品</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="dessert">
+        <div class="dessert-tt">
+            <h2>除了茶以外的其他選擇</h2>
+        </div>
+        <div class="dessert-list">
+            <div class="dessert-item">
+                <div class="dessert-pic">
+                    <a href="">
+                        <img src="img/purin.jpg" alt="布丁">
+                    </a>
+                </div>
+                <div class="dessert-txt">
+                    <h3>布丁</h3>
+                    <p>結合茶香與濃郁的布丁口感口味獨特，滑順細膩絕對是茶愛者的最愛</p>
+                </div>
+            </div>
+            <div class="dessert-item">
+                <div class="dessert-pic">
+                    <a href="">
+                        <img src="img/cake.jpg" alt="長崎蛋糕">
+                    </a>
+                </div>
+                <div class="dessert-txt">
+                    <h3>長崎蛋糕</h3>
+                    <p>源自日本的經典點心柔軟綿密且不死甜，搭配茶香入口即化，回味無窮</p>
+                </div>
+            </div>
+            <div class="dessert-item">
+                <div class="dessert-pic">
+                    <a href="">
+                        <img src="img/cookie.jpg" alt="餅乾">
+                    </a>
+                </div>
+                <div class="dessert-txt">
+                    <h3>餅乾</h3>
+                    <p>脆口酥香的餅乾混合茶葉的香氣獨特的組合帶來愉悅的口感和美妙的茶香</p>
+                </div>
+            </div>
+            <div class="dessert-item">
+                <div class="dessert-pic">
+                    <a href="">
+                        <img src="img/ice.jpg" alt="冰品">
+                    </a>
+                </div>
+                <div class="dessert-txt">
+                    <h3>冰品</h3>
+                    <p>濃郁的茶味融入冰凍的奶油中口感順滑帶來涼爽又迷人的茶香體驗</p>
+                </div>
+            </div>
+        </div>
+        <div class="dessert-more">
+            <a href="">選購更多</a>
+        </div>
+    </section>
+
+    <section class="make-tea">
+        <div class="make-tea-area">
+            <h2>正在煩惱怎麼泡茶嗎？</h2>
+            <p>如何沖泡一壺好茶？熱水要幾度才適合？</br>
+                善用其他茶具及正確步驟，簡單易懂，助你輕鬆泡好茶！
+            </p>
+            <div class="tea-btn">
+                <a href="">簡易泡茶方法</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-area">
+            <div class="footer-logo">
+                <a href="index.html">
+                <img src="img/logo-white.png" alt="logo"></a>
+            </div>
+            <nav class="footer-nav">
+                <div class="footer-nav-item">
+                    <ul>
+                        <li>
+                            <a href="news.html">最新消息</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="about.html">關於我們</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="">商品一覽</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="">簡單泡杯茶</a>
+
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="">聯絡我們</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="">常見問題</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sns">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="img/twitter.png" alt="twitter">
+                        </li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <li><a href="">
+                            <img src="img/line.png" alt="line">
+                        </li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <li><a href="">
+                            <img src="img/instagram.png" alt="instagram">
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="tibame">
+            <p>本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type=" text/javascript">
+                                    var counter = 1;
+                                    setInterval(function () {
+                                    document.getElementById('radio' + counter).checked = true;
+                                    counter++;
+                                    if (counter > 3) {
+                                    counter = 1;
+                                    }
+                                    }, 5000);
+                                    </script>
+</body>
+
+</html>
