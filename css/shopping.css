@@ -1,0 +1,169 @@
+.main {
+    background-image: url(../img/header-bg04.jpg);
+    height: 255px;
+
+}
+
+.main .title {
+    text-align: center;
+    padding-top: 120px;
+    font-size: 30px;
+    color: #309D4E;
+}
+
+/* 麵包屑 */
+
+.breadcrumb {
+    width: 1200px;
+    margin: auto;
+}
+
+.breadcrumb ul {
+    display: flex;
+    margin: 15px;
+}
+
+.breadcrumb li {
+    padding-block: 5px;
+}
+
+.breadcrumb ul li:not(:first-child)::before {
+    content: "/";
+    color: #309D4E;
+    margin-left: 8px;
+}
+
+.breadcrumb a {
+    color: #309D4E;
+}
+
+/* 麵包屑end */
+
+/* 商品頁 */
+
+.shop-wrap {
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.shop-side {
+    width: 100px;
+    height: 400px;
+    text-align: center;
+    border-radius: 50px;
+    padding: 30px;
+    margin-top: 150px;
+    margin-left: 20px;
+    background-color: #309D4E;
+}
+
+.shop-side-nav h3 {
+    margin-bottom: 30px;
+    color: #EBF1D6;
+}
+
+.shop-side-nav li {
+    font-size: 16px;
+    margin-block: 20px;
+    display: block;
+}
+
+.shop-side-nav a {
+    color: #EBF1D6;
+    text-align: center;
+    display: block;
+    line-height: 40px;
+}
+
+.shop-side-nav li:hover {
+    background-color: #EBF1D6;
+    border-radius: 50px;
+}
+
+.shop-side-nav a:hover {
+    color: #309D4E
+}
+
+.shop-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    margin-right: 10px;
+    margin-block: 50px;
+}
+
+.shop-item {
+    width: 300px;
+    border: 1.5px solid #309D4E;
+    position: relative;
+}
+
+.hover-img {
+    background: black;
+    width: 300px;
+    height: 365px;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    opacity: 0;
+}
+
+.hover-img:hover {
+    opacity: 0.15;
+}
+
+.shop-item:hover {
+    opacity: 0.8;
+}
+
+.shop-item:hover h4,
+.shop-item:hover p {
+    color: #309D4E;
+}
+
+.shop-item-pic {
+    margin-bottom: 10px;
+}
+
+.shop-item-pic img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.shop-item h4 {
+    margin-bottom: 15px;
+    padding-left: 5px;
+    color: #333;
+}
+
+.shop-item p {
+    margin-bottom: 10px;
+    padding-left: 5px;
+    font-size: 14px;
+}
+
+.shop-item span {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 14px;
+}
+
+.news-page {
+    display: flex;
+    width: 1200px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-block: 40px;
+}
+
+.news-page a {
+    margin-inline: 10px;
+    color: #333;
+    font-weight: 200;
+}
