@@ -1,0 +1,109 @@
+.main {
+    background-image: url(../img/header-bg04.jpg);
+    height: 255px;
+
+}
+
+.main .title {
+    text-align: center;
+    padding-top: 120px;
+    font-size: 30px;
+    color: #309D4E;
+}
+
+/* 麵包屑 */
+
+.breadcrumb {
+    width: 1200px;
+    margin: auto;
+}
+
+.breadcrumb ul {
+    display: flex;
+    margin: 15px;
+}
+
+.breadcrumb li {
+    padding-block: 5px;
+}
+
+.breadcrumb ul li:not(:first-child)::before {
+    content: "/";
+    color: #309D4E;
+    margin-left: 8px;
+}
+
+.breadcrumb a {
+    color: #309D4E;
+}
+
+/* 麵包屑end */
+
+/* 輕鬆泡茶 */
+
+
+
+.maketea-wrap {
+    width: 1200px;
+    margin: auto;
+
+}
+
+.maketea h3 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.maketea h4 {
+    font-size: 18px;
+}
+
+.maketea-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 100px;
+    margin-block: 90px;
+    margin-bottom: 120px;
+
+}
+
+.maketea-item {
+    padding: 50px;
+    display: grid;
+    place-items: center;
+    position: relative;
+
+}
+
+.maketea span {
+    display: block;
+    width: 50px;
+    border-radius: 50px;
+    background: linear-gradient(to top right, #72CAAF, #C0FBD1);
+    border: 1px solid black;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .2));
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+
+}
+
+.maketea-item .pic {
+    margin-top: 50px;
+}
+
+
+.maketea-item .pic img {
+    vertical-align: top;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.maketea-item p {
+    padding-block: 70px;
+
+}

@@ -71,11 +71,21 @@
     display: block;
 }
 
+
 .shop-side-nav a {
     color: #EBF1D6;
     text-align: center;
     display: block;
     line-height: 40px;
+}
+
+.shop-side-nav .all {
+    background-color: #EBF1D6;
+    border-radius: 50px;
+}
+
+.shop-side-nav .all {
+    color: #309D4E;
 }
 
 .shop-side-nav li:hover {
@@ -105,7 +115,7 @@
 .hover-img {
     background: black;
     width: 300px;
-    height: 365px;
+    height: 300px;
     position: absolute;
     z-index: 999;
     top: 0;
@@ -152,6 +162,8 @@
     bottom: 10px;
     font-size: 14px;
 }
+
+
 
 .news-page {
     display: flex;

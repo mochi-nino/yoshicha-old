@@ -1,0 +1,115 @@
+.main {
+    background-image: url(../img/header-bg04.jpg);
+    height: 255px;
+
+}
+
+.main .title {
+    text-align: center;
+    padding-top: 120px;
+    font-size: 30px;
+    color: #309D4E;
+}
+
+/* 麵包屑 */
+
+.breadcrumb {
+    width: 1200px;
+    margin: auto;
+}
+
+.breadcrumb ul {
+    display: flex;
+    margin: 15px;
+}
+
+.breadcrumb li {
+    padding-block: 5px;
+}
+
+.breadcrumb ul li:not(:first-child)::before {
+    content: "/";
+    color: #309D4E;
+    margin-left: 8px;
+}
+
+.breadcrumb a {
+    color: #309D4E;
+}
+
+/* 麵包屑end */
+
+/* 常見問題 */
+
+.qaz-wrap {
+    width: 1200px;
+    margin: auto;
+    margin-block: 60px;
+    margin-bottom: 100px;
+}
+
+.qaz-list {
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.qaz-title {
+    background-color: #309D4E;
+    border-radius: 50px;
+    position: relative;
+    line-height: 50px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.qaz-title h3 {
+    color: #fff;
+}
+
+.open-btn {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    right: 0;
+    top: -5px;
+    cursor: pointer;
+}
+
+.closure-btn {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    right: 0;
+    top: -5px;
+    cursor: pointer;
+}
+
+.qaz-item {
+    background-color: #fff;
+    border-radius: 30px;
+    margin-inline: 10px;
+    max-height: 0px;
+    /* display: none; */
+    transition: max-height 0.4s ease;
+    overflow: hidden;
+    /* padding: 30px; */
+    box-sizing: border-box;
+}
+
+.qaz-item div {
+    padding: 30px;
+}
+
+.qaz-item h4 {
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+.qaz-item p:first-of-type {
+    margin-bottom: 30px;
+}

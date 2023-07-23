@@ -1,0 +1,119 @@
+.main {
+    background-image: url(../img/header-bg04.jpg);
+    height: 255px;
+
+}
+
+.main .title {
+    text-align: center;
+    padding-top: 120px;
+    font-size: 30px;
+    color: #309D4E;
+}
+
+/* 麵包屑 */
+
+.breadcrumb {
+    width: 1200px;
+    margin: auto;
+}
+
+.breadcrumb ul {
+    display: flex;
+    margin: 15px;
+}
+
+.breadcrumb li {
+    padding-block: 5px;
+}
+
+.breadcrumb ul li:not(:first-child)::before {
+    content: "/";
+    color: #309D4E;
+    margin-left: 8px;
+}
+
+.breadcrumb a {
+    color: #309D4E;
+}
+
+/* 麵包屑end */
+
+/* 關於我們 */
+
+.access {
+    width: 1200px;
+    margin: auto;
+
+}
+
+
+.access-warp .forms {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #309D4E;
+    margin-top: 50px;
+}
+
+.access-warp .forms .form-item {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin: auto;
+    justify-content: center;
+
+}
+
+.form-item label {
+    margin-block: 20px;
+    font-weight: 200;
+}
+
+.form-item input {
+    width: 600px;
+    height: 30px;
+    padding: 5px 8px;
+    font-size: 16px;
+}
+
+.form-item textarea {
+    width: 600px;
+    height: 150px;
+    padding: 5px 8px;
+    font-size: 16px;
+}
+
+.forms>button {
+    width: 80px;
+    height: 30px;
+    margin: auto;
+    font-size: 16px;
+    margin-block: 20px;
+}
+
+.shop {
+    display: flex;
+    margin-block: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop .info {
+    margin-right: 50px;
+
+}
+
+.shop .info table {
+    margin: 20px;
+    text-align: center;
+
+}
+
+.shop .info table tr {
+    border-bottom: 1.5px solid #309D4E;
+    line-height: 80px;
+}

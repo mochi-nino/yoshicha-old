@@ -94,9 +94,16 @@
     font-size: 16px;
 }
 
+
 .news-class a:hover {
     background-color: #309D4E;
     color: #EBF1D6;
+    border-radius: 50px;
+}
+
+.news-class .all {
+    color: #EBF1D6;
+    background-color: #309D4E;
     border-radius: 50px;
 }
 
