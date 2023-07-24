@@ -110,7 +110,6 @@
                 <div class="qaz-title">
                     <h3>商品訂購</h3>
                     <button class="open-btn">＋</button>
-                    <button class="closure-btn">－</button>
                 </div>
                 <div class="qaz-item">
                     <div>
@@ -126,7 +125,6 @@
                 <div class="qaz-title">
                     <h3>訂單付款</h3>
                     <button class="open-btn">＋</button>
-                    <button class="closure-btn">－</button>
                 </div>
                 <div class="qaz-item">
                     <div>
@@ -141,7 +139,6 @@
                 <div class="qaz-title">
                     <h3>修改訂單</h3>
                     <button class="open-btn">＋</button>
-                    <button class="closure-btn">－</button>
                 </div>
                 <div class="qaz-item">
                     <div>
@@ -154,7 +151,6 @@
                 <div class="qaz-title">
                     <h3>出貨配送</h3>
                     <button class="open-btn">＋</button>
-                    <button class="closure-btn">－</button>
                 </div>
                 <div class="qaz-item">
                     <div>
@@ -169,7 +165,6 @@
                 <div class="qaz-title">
                     <h3>退換貨說明</h3>
                     <button class="open-btn">＋</button>
-                    <button class="closure-btn">－</button>
                 </div>
                 <div class="qaz-item">
                     <div>
@@ -255,51 +250,26 @@
 
         let openbtn = document.getElementsByClassName("open-btn");
         let qaztitle = document.getElementsByClassName("qaz-title");
-
-        // let collapseitem = document.getElementsByClassName("qaz-item");
-
+        let collapseitem = document.getElementsByClassName("qaz-item");
 
 
         for (let i = 0; i < qaztitle.length; i++) {
             qaztitle[i].addEventListener("click", function morebtn() {
-                let collapseitem = this.nextElementSibling;
-                if (collapseitem.style.maxHeight === "0px") {
-                    collapseitem.style.maxHeight = "250px";
-                    // collapseitem.style.padding = "30px 40px";
-                    openbtn[i].style.display = "none";
+                // let collapseitem = this.nextElementSibling;
+                let computedStyle = window.getComputedStyle(collapseitem[i]);
+                let maxHeightValue = parseFloat(computedStyle.maxHeight);
+                if (maxHeightValue === 0) {
+                    collapseitem[i].style.maxHeight = "250px";
+                    openbtn[i].textContent = "－"
                 }
                 else {
-                    collapseitem.style.maxHeight = "0px";
-                    openbtn[i].style.display = "block";
-
-                    // collapseitem.style.padding = "0px";
-                    // collapseitem.style.transition = "max-height 0.3s,padding 0s 0.4s;"
+                    collapseitem[i].style.maxHeight = "0px";
+                    openbtn[i].textContent = "＋";
                 }
+                console.log(collapseitem[i])
             })
         };
 
-
-
-
-
-
-// <!-- 
-//         for (let i = 0; i < qaztitle.length; i++) {
-//             qaztitle[i].addEventListener("click", function morebtn() {
-//                 let collapseitem = this.nextElementSibling;
-//                 if (collapseitem.style.display === "none") {
-//                     collapseitem.style.display = "block";
-//                     if (collapseitem.style.maxheight !== "0") {
-//                         collapseitem.style.maxheight = "200px";
-//                     }
-//                     else {
-//                         collapseitem.style.maxheight = "0"
-//                     }
-//                 } else {
-//                     collapseitem.style.display = "none";
-//                 }
-//             })
-//         }; -->
     </script>
 
 

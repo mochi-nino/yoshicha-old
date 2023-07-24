@@ -79,27 +79,14 @@
     cursor: pointer;
 }
 
-.closure-btn {
-    border: none;
-    background-color: transparent;
-    color: #fff;
-    font-size: 40px;
-    position: absolute;
-    right: 0;
-    top: -5px;
-    cursor: pointer;
-}
 
 .qaz-item {
     background-color: #fff;
     border-radius: 30px;
     margin-inline: 10px;
-    max-height: 0px;
-    /* display: none; */
+    max-height: 0;
     transition: max-height 0.4s ease;
     overflow: hidden;
-    /* padding: 30px; */
-    box-sizing: border-box;
 }
 
 .qaz-item div {

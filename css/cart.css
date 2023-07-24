@@ -1,0 +1,223 @@
+.main .main_title {
+    font-size: 30px;
+    color: #309D4E;
+    margin: auto;
+    margin-block: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.main .title h2 {
+    line-height: 100px;
+}
+
+
+/* 購物車 */
+
+.cart_list {
+    width: 1200px;
+    margin: auto;
+}
+
+
+.step {
+    width: 600px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.step3 {
+    position: relative;
+}
+
+.step2 {
+    margin-inline: 150px;
+    position: relative;
+}
+
+.step span {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: 2px solid #309D4E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #309D4E;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.step1 span {
+    background-color: #72CAAF;
+    border: 2px solid #72CAAF;
+    color: #fff;
+}
+
+.step2 span::before,
+.step3 span::before {
+    content: "";
+    width: 150px;
+    height: 5px;
+    background-color: #72CAAF;
+    position: absolute;
+    left: -150px;
+}
+
+.title {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 80px;
+    place-items: center;
+    margin: auto;
+    margin-top: 100px;
+    border-bottom: 2px solid #72CAAF;
+    padding-bottom: 30px;
+
+}
+
+.title h3 {
+    /* margin-inline: 80px */
+    font-size: 18px;
+    padding-left: 10px;
+
+}
+
+.cart_list .item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 110px;
+    align-items: center;
+    place-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.cart_list .item::before {
+    content: "✖";
+    position: absolute;
+    color: red;
+    right: 20px;
+    font-size: 16px;
+
+}
+
+.cart_list .item .box {
+    display: flex;
+    align-items: center;
+
+}
+
+.cart_list .item .pic {
+    width: 120px;
+    margin-right: 10px;
+}
+
+.cart_list .item .pic img {
+    width: 100%;
+    border-radius: 10px;
+    vertical-align: top;
+}
+
+.tt {
+    width: 100px;
+}
+
+.quantity input {
+    width: 20px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+}
+
+.quantity button {
+    border: none;
+    background-color: transparent;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+
+.cart_check_box {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+
+}
+
+.cart_metod {
+    width: 250px;
+}
+
+
+.cart_metod h3,
+.order_check h3 {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #72CAAF;
+
+}
+
+.check-method {
+    margin-top: 20px;
+}
+
+.check-method h4 {
+    margin-bottom: 10px;
+}
+
+.check-method select {
+    margin-bottom: 20px;
+}
+
+.order_check {
+    margin-bottom: 50px;
+
+}
+
+.sub,
+.freight,
+.coupon,
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 30px;
+}
+
+.coupon .coupun_code {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.coupon .coupun_add {
+    background-color: #309D4E;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+.cart_list .total {
+    padding-top: 30px;
+    border-top: 2px solid #72CAAF;
+}
+
+.check_out {
+    background-color: #309D4E;
+    border: none;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 10px;
+    width: 150px;
+    font-size: 16px;
+    margin-left: 60px;
+}
