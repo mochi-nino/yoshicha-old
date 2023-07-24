@@ -43,6 +43,7 @@ a {
 
 .slide img {
     height: 700px;
+    width: 100%;
     /* opacity: 0.5; */
 }
 
@@ -236,6 +237,10 @@ ul:last-child {
     color: #309D4E;
 }
 
+.news-list .list-item:hover p {
+    color: #309D4E;
+}
+
 .news-list .list-item:hover .arrow {
     transform: translateX(10px);
 }
@@ -249,7 +254,7 @@ ul:last-child {
     position: absolute;
     left: 680px;
     top: 40px;
-    transition: 0.25s ease-in-out 0s;
+    transition: 0.25s ease;
 }
 
 .arrow::before {
