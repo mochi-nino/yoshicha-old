@@ -74,14 +74,14 @@
 
 
 .shop-side-nav a {
-    color: #EBF1D6;
+    color: #EFF1E8;
     text-align: center;
     display: block;
     line-height: 40px;
 }
 
 .shop-side-nav .all {
-    background-color: #EBF1D6;
+    background-color: #EFF1E8;
     border-radius: 50px;
 }
 
@@ -90,7 +90,7 @@
 }
 
 .shop-side-nav li:hover {
-    background-color: #EBF1D6;
+    background-color: #EFF1E8;
     border-radius: 50px;
 }
 
@@ -143,6 +143,8 @@
 .shop-item-pic img {
     width: 100%;
     vertical-align: top;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .2));
+
 }
 
 .shop-item h4 {

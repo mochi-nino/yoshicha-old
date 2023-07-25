@@ -135,7 +135,6 @@ a {
 /* 最新消息 */
 
 .news {
-    background-color: #EBF1D6;
     height: 600px;
 
 }
@@ -391,7 +390,6 @@ ul:last-child {
 
 /* 甜點區 */
 .dessert {
-    background-color: #EBF1D6;
     padding-bottom: 50px;
 }
 

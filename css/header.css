@@ -1,6 +1,6 @@
 body {
     font-family: 'Kosugi Maru', sans-serif, 'Noto Sans TC', sans-serif;
-    background-color: #EBF1D6;
+    background-color: #EFF1E8;
 }
 
 h2 {
@@ -29,7 +29,7 @@ li {
 
 header {
     background: url(../img/header-top.jpg) top center repeat-x;
-    background-color: #EBF1D6;
+    background-color: #EFF1E8;
 }
 
 .content {
