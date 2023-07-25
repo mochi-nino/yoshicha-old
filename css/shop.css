@@ -109,7 +109,7 @@
 
 .shop-item {
     width: 300px;
-    /* border: 1px solid #309D4E; */
+    /* border: 1px solid black; */
     position: relative;
 }
 
@@ -138,6 +138,7 @@
 
 .shop-item-pic {
     margin-bottom: 10px;
+    border-bottom: 1px solid black;
 }
 
 .shop-item-pic img {
