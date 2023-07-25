@@ -109,7 +109,7 @@
 
 .shop-item {
     width: 300px;
-    border: 1.5px solid #309D4E;
+    /* border: 1px solid #309D4E; */
     position: relative;
 }
 
@@ -144,6 +144,7 @@
     width: 100%;
     vertical-align: top;
     filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .2));
+    border-radius: 20px;
 
 }
 
