@@ -175,7 +175,12 @@
 
 .check-method select {
     margin-bottom: 20px;
+    font-size: 14px;
+    padding: 5px;
+    border: 1px solid #309D4E;
+    border-radius: 5px;
 }
+
 
 .order_check {
     margin-bottom: 50px;
@@ -221,3 +226,4 @@
     font-size: 16px;
     margin-left: 60px;
 }
+

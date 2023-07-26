@@ -1,15 +1,28 @@
 .main {
-    background-image: url(../img/header-bg04.jpg);
-    background-size: 100%;
-    height: 255px;
+    background-image: url(../img/news-pic.jpg);
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 460px;
+    background-position: center center;
+    position: relative;
+    opacity: 0.8;
 
 }
 
 .main .title {
-    text-align: center;
-    padding-top: 120px;
-    font-size: 30px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.main h1 {
     color: #309D4E;
+    text-align: center;
+    line-height: 460px;
 }
 
 /* 麵包屑 */
@@ -69,26 +82,33 @@
 }
 
 .news-search {
-    border: 2px solid #309D4E;
-    font-size: 0;
+    background-color: transparent;
+    padding: 2px;
     display: flex;
+    align-items: center;
+    background-color: #309D4E;
+    border-radius: 10px;
+    margin-right: 5px;
 }
 
 .news-search input {
-    height: 40px;
-    width: 300px;
     border: none;
-    font-size: 16px;
+    border-radius: 8px;
+    /* background-color: #309D4E; */
+    height: 30px;
+    width: 180px;
+    border-color: #EBF1D6;
+    font-size: 14px;
+    text-align: left;
     padding-left: 5px;
 
 }
 
 .news-search button {
-    background-color: #309D4E;
+    background-color: transparent;
     border: none;
-    height: 40px;
-    width: 40px;
     cursor: pointer;
+}
 }
 
 .news-search i {
@@ -139,29 +159,32 @@
 }
 
 
-.news-item h3:hover {
+.news-item h3 {
     color: #309D4E;
 }
 
 .news span {
+    display: inline-block;
+    margin-left: 15px;
     color: #ffffff;
-    margin-left: 10px;
-
+    width: 80px;
+    text-align: center;
+    padding: 2px;
 }
 
 .news .important {
     background-color: #FE8E8E;
-    padding: 5px;
+
 }
 
 .news .event {
-    background-color: #EFE95f;
-    padding: 5px;
+    background-color: #eeb765;
+
 }
 
 .news .products {
     background-color: #5fc6ef;
-    padding: 5px;
+
 }
 
 .news .txt {
@@ -177,6 +200,7 @@
 .news-item .txt h3,
 .news-item .txt p {
     margin-block: 30px;
+    line-height: 1.5em;
 }
 
 

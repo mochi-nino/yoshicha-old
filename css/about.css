@@ -1,15 +1,18 @@
 .main {
-    background-image: url(../img/header-bg04.jpg);
-    background-size: 100%;
-    height: 255px;
-
+    background-image: url(../img/about-pic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    /* height: 255px; */
 }
+
 
 .main .title {
     text-align: center;
-    padding-top: 120px;
+    padding-block: 120px;
     font-size: 30px;
     color: #309D4E;
+    margin: auto;
 }
 
 /* 麵包屑 */
@@ -94,4 +97,5 @@
 
 .about .item p {
     padding: 10px;
+    line-height: 50px;
 }
