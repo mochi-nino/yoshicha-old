@@ -68,14 +68,14 @@
 .about-card:nth-child(1) {
     padding-top: 50px;
     margin-top: 80px;
-    border-top: 1px solid #309D4E;
+    border-top: 2px solid #CC7A3E;
 
 }
 
 .about-card:nth-child(3) {
     margin-bottom: 100px;
     padding-bottom: 50px;
-    border-bottom: 1px solid #309D4E;
+    border-bottom: 2px solid #CC7A3E;
 }
 
 .about-card:nth-child(2) {

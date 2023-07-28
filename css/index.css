@@ -197,17 +197,17 @@ ul:last-child {
     color: #ffffff;
     width: 80px;
     text-align: center;
-    /* border-radius: 20px; */
+    border-radius: 10px;
     padding: 2px;
 }
 
 .news .important {
-    background-color: #FE8E8E;
+    background-color: #e65a5a;
 
 }
 
 .news .event {
-    background-color: #fcaf3d;
+    background-color: #8226d8;
 
 }
 
@@ -468,14 +468,14 @@ ul:last-child {
 }
 
 .make-tea-area h2 {
-    color: #EBF1D6;
+    color: #fff;
     font-size: 30px;
     padding: 30px;
     letter-spacing: 2px;
 }
 
 .make-tea-area p {
-    color: #EBF1D6;
+    color: #fff;
     letter-spacing: 16.5%;
     line-height: 28px;
     margin-top: 10px;

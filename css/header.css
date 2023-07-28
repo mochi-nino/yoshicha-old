@@ -153,16 +153,17 @@ footer {
 
 .footer-area {
     display: flex;
-    width: 1200px;
     margin: auto;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.footer-logo {
-    vertical-align: top;
-    padding-block: 8px;
+.footer-logo {}
 
+.footer-logo img {
+    width: 160px;
+    height: auto;
+    vertical-align: top;
 }
 
 .footer-nav {
