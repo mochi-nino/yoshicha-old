@@ -11,8 +11,8 @@ select {
 
 h1 {
     font-weight: 800;
-    font-size: 40px;
-    letter-spacing: 30px;
+    font-size: 45px;
+    letter-spacing: 15px;
 }
 
 
@@ -111,6 +111,10 @@ a {
     position: relative;
 }
 
+.menu .item a:hover p {
+    color: #dd7335;
+}
+
 .menu .item a::before {
     content: "";
     position: absolute;
@@ -125,6 +129,7 @@ a {
 
 .menu .item a:hover::before {
     width: 100%;
+    background-color: #dd7335;
 }
 
 .menu .item:nth-child(3) {

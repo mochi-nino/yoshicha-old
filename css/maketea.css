@@ -11,7 +11,7 @@
     text-align: center;
     padding-block: 120px;
     font-size: 30px;
-    color: #309D4E;
+    color: #2D4E36;
     margin: auto;
 }
 
@@ -33,12 +33,16 @@
 
 .breadcrumb ul li:not(:first-child)::before {
     content: "/";
-    color: #309D4E;
+    color: #2D4E36;
     margin-left: 8px;
 }
 
 .breadcrumb a {
-    color: #309D4E;
+    color: #2D4E36;
+}
+
+.breadcrumb a:hover {
+    color: #dd7335
 }
 
 /* 麵包屑end */
@@ -56,7 +60,7 @@
     font-size: 24px;
     text-align: center;
     margin-top: 50px;
-    color: #309D4E;
+    color: #dd7335;
     padding-bottom: 40px;
 }
 
@@ -69,14 +73,14 @@
 }
 
 .maketea p {
-    color: #EFF1E8;
+    color: #fff;
     letter-spacing: 3px;
     padding-top: 20px;
     line-height: 50px;
 }
 
 .maketea-list {
-    border-top: 1px solid #EFF1E8;
+    border-top: 1px solid #dd7335;
 }
 
 .maketea-item {
@@ -92,7 +96,7 @@
 
 .maketea-item .pic {
     width: 1200px;
-    z-index: 999;
+    z-index: 3;
 
 }
 
@@ -112,8 +116,8 @@
 }
 
 .maketea-item .txt-content {
-    color: #EFF1E8;
-    background-color: #309D4E;
+    color: #fff;
+    background-color: #2D4E36;
     padding-top: 60px;
     padding-bottom: 40px;
     writing-mode: vertical-rl;
@@ -136,7 +140,7 @@
     width: 45px;
     border-radius: 50px;
     background: linear-gradient(to top right, #f1ad5e, #dd7335);
-    border: 1px solid #EFF1E8;
+    border: 1px solid #fff;
     filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .2));
     text-align: center;
     line-height: 45px;
@@ -166,7 +170,7 @@
 }
 
 .maketea-item .go-shopping {
-    background-color: #EFF1E8;
+    background-color: #dd7335;
     padding: 5px;
     width: 30px;
     height: 120px;
@@ -177,13 +181,14 @@
     padding: 5px;
     margin-left: 20px;
     margin-top: 40px;
-    color: #dd7335;
+    color: #fff;
     letter-spacing: 3px
 }
 
 .maketea-item .go-shopping:hover {
     opacity: 0.9;
     transition: .1s ease;
+    color: #2D4E36;
 }
 
 /* page-top */

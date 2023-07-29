@@ -11,7 +11,7 @@
     text-align: center;
     padding-block: 120px;
     font-size: 30px;
-    color: #309D4E;
+    color: #2D4E36;
     margin: auto;
 }
 
@@ -33,12 +33,16 @@
 
 .breadcrumb ul li:not(:first-child)::before {
     content: "/";
-    color: #309D4E;
+    color: #2D4E36;
     margin-left: 8px;
 }
 
 .breadcrumb a {
-    color: #309D4E;
+    color: #2D4E36;
+}
+
+.breadcrumb a:hover {
+    color: #dd7335
 }
 
 /* 麵包屑end */
@@ -59,7 +63,7 @@
 }
 
 .qaz-title {
-    background-color: #309D4E;
+    background-color: #2D4E36;
     border-radius: 50px;
     position: relative;
     line-height: 50px;

@@ -33,12 +33,16 @@
 
 .breadcrumb ul li:not(:first-child)::before {
     content: "/";
-    color: #309D4E;
+    color: #2D4E36;
     margin-left: 8px;
 }
 
 .breadcrumb a {
-    color: #309D4E;
+    color: #2D4E36;
+}
+
+.breadcrumb a:hover {
+    color: #dd7335
 }
 
 /* 麵包屑end */
@@ -51,10 +55,10 @@
 
 }
 
-.access-warp >h3 {
+.access-warp>h3 {
     margin: auto;
     text-align: center;
-    color: #309D4E;
+    color: #2D4E36;
     margin-top: 50px;
 }
 
@@ -66,8 +70,8 @@
     width: 1000px;
     margin: auto;
     padding: 20px;
-    border-top: 1px solid #309D4E;
-    border-bottom: 1px solid #309D4E;
+    border-top: 1px solid #2D4E36;
+    border-bottom: 1px solid #2D4E36;
     margin-top: 50px;
 }
 
@@ -107,11 +111,15 @@
     font-size: 16px;
     margin-top: 40px;
     margin-bottom: 30px;
-    background-color: #309D4E;
+    background-color: #2D4E36;
     color: #fff;
     border: none;
     border-radius: 30px;
     cursor: pointer;
+}
+
+.forms>button:hover {
+    background-color: #dd7335;
 }
 
 .shop {
@@ -133,6 +141,6 @@
 }
 
 .shop .info table tr {
-    border-bottom: 1.5px solid #309D4E;
+    border-bottom: 1.5px solid #2D4E36;
     line-height: 80px;
 }

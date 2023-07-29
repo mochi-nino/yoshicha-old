@@ -25,50 +25,50 @@
             <div class="header-group">
                 <div class="cart">
                     <a href="cart.html">
-                        <i class="fa-solid fa-cart-shopping" style="color: #fff;"></i>
+                        <i class="fa-solid fa-cart-shopping" style="color: #fff;" id="cart-i"></i>
                     </a>
                 </div>
                 <div class="login">
                     <a href="">
-                        <i class="fa-solid fa-user" style="color: #fff;"></i>
+                        <i class="fa-solid fa-user" style="color: #fff;" id="login-i"></i>
                     </a>
                 </div>
             </div>
             <!-- 導覽列 -->
             <nav class="menu">
                 <div class="item">
-                    <a href="news.html">
-                        <img src="img/news.png" alt="最新消息">
+                    <a href="news.html" class="nav-link">
+                        <img src="img/news.png" alt="最新消息" class="navicon">
                         <p>最新消息</p>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="about.html">
-                        <img src="img/about.png" alt="關於我們">
+                    <a href="about.html" class="nav-link">
+                        <img src="img/about.png" alt="關於我們" class="navicon">
                         <p>關於我們</p>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="shop.html">
-                        <img src="img/shop.png" alt="商品一覽">
+                    <a href="shop.html" class="nav-link">
+                        <img src="img/shop.png" alt="商品一覽" class="navicon">
                         <p>商品一覽</p>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="maketea.html">
-                        <img src="img/tea.png" alt="簡單泡杯茶">
+                    <a href="maketea.html" class="nav-link">
+                        <img src="img/tea.png" alt="簡單泡杯茶" class="navicon">
                         <p>簡單泡杯茶</p>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="access.html">
-                        <img src="img/access.png" alt="聯絡我們">
+                    <a href="access.html" class="nav-link">
+                        <img src="img/access.png" alt="聯絡我們" class="navicon">
                         <p>聯絡我們</p>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="qaz.html">
-                        <img src="img/qaz.png" alt="常見問題">
+                    <a href="qaz.html" class="nav-link">
+                        <img src="img/qaz.png" alt="常見問題" class="navicon">
                         <p>常見問題</p>
                     </a>
                 </div>
@@ -94,9 +94,9 @@
                 </div>
                 <!-- 自動換張 -->
                 <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
+                    <label class="auto-btn1"></label>
+                    <label class="auto-btn2"></label>
+                    <label class="auto-btn3"></label>
                 </div>
                 <!-- 手動換張 -->
                 <div class="navigation-manual">
@@ -401,7 +401,7 @@
 
 
 
-    <script type=" text/javascript">
+    <!-- <script type=" text/javascript">
                                     var counter = 1;
                                     setInterval(function () {
                                     document.getElementById('radio' + counter).checked = true;
@@ -410,7 +410,57 @@
                                     counter = 1;
                                     }
                                     }, 5000);
-                                    </script>
+
+
+
+                                    
+                                    </script> -->
+    <script>
+        var counter = 1;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 3) {
+                counter = 1;
+            }
+        }, 5000);
+
+        // nav換色
+        let navLink = document.getElementsByClassName("nav-link");
+        let navIcon = document.getElementsByClassName("navicon");
+        let navName = ["news", "about", "shop", "tea", "access", "qaz"];
+        for (let i = 0; i < navLink.length; i++) {
+            navLink[i].addEventListener("mouseover", function () {
+                navIcon[i].src = `img/${navName[i]}-org.png`;
+            })
+            navLink[i].addEventListener("mouseout", function () {
+                navIcon[i].src = `img/${navName[i]}.png`
+            })
+
+        }
+        // <!-- 購物車換色 -->
+        let cartI = document.getElementById("cart-i");
+        cartI.addEventListener("mouseover", function () {
+            cartI.style.color = "#dd7335"
+        })
+        cartI.addEventListener("mouseout", function () {
+            cartI.style.color = "#fff"
+        })
+
+        // 會員
+        let loginI = document.getElementById("login-i");
+        loginI.addEventListener("mouseover", function () {
+            loginI.style.color = "#dd7335"
+        })
+        loginI.addEventListener("mouseout", function () {
+            loginI.style.color = "#fff"
+        })
+
+
+
+    </script>
+
+
 </body>
 
 </html>
