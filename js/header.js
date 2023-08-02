@@ -41,12 +41,17 @@ pageTop.addEventListener("click", function scrollToTop() {
 
 
 window.addEventListener("scroll", function () {
-    if (window.scrollY >= 400) {
-        pageTop.style.display = 'block';
+    if (window.innerWidth >= 768) {
+        if (window.scrollY >= 400) {
+            pageTop.style.display = 'block';
+        } else {
+            pageTop.style.display = 'none';
+        }
     } else {
         pageTop.style.display = 'none';
     }
-})
+});
+
 
 
 // 手機板
@@ -54,14 +59,14 @@ window.addEventListener("scroll", function () {
 const hamburger = document.querySelector(".hamburger");
 const mMenu = document.querySelector(".m-menu");
 
-hamburger.addEventListener("click",function(){
+hamburger.addEventListener("click", function () {
     hamburger.classList.toggle("active");
     mMenu.classList.toggle("active");
 
 })
 
-document.querySelectorAll(".m-link").forEach(function(n){
-    n.addEventListener("click",function(){
+document.querySelectorAll(".m-link").forEach(function (n) {
+    n.addEventListener("click", function () {
         hamburger.classList.remove("active");
         mMenu.classList.remove("active");
     })

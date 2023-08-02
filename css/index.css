@@ -17,7 +17,6 @@ a {
 
 .main {
     height: auto;
-    border-radius: 10px;
     overflow: hidden;
     position: relative;
 }
@@ -59,7 +58,7 @@ a {
 }
 
 .manual-btn {
-    border: 2px solid #2D4E36;
+    border: 2px solid #dd7335;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -100,6 +99,7 @@ a {
     left: 0px;
     margin: auto;
     bottom: 20px;
+
 }
 
 .navigation-auto label {
@@ -108,8 +108,6 @@ a {
     border-radius: 10px;
     transition: 1s;
     margin-inline: 20px;
-
-
 }
 
 .navigation-auto div:not(:last-child) {
@@ -220,7 +218,6 @@ ul:last-child {
     position: relative;
     padding-bottom: 5px;
     margin: 5px;
-    width: 50px;
 }
 
 .news-list .list-item p {
@@ -421,27 +418,22 @@ ul:last-child {
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .5));
 }
 
-.dessert-txt {
-    text-align: center;
-    width: 270px;
-    letter-spacing: 16.5%;
-
-}
 
 .dessert-txt h3 {
     margin-bottom: 20px;
     font-size: 20px;
-    margin-left: 70px;
+    text-align: center;
+
 }
 
 .dessert-txt p {
-    line-height: 30px;
-    width: 180px;
-    margin-left: 70px;
+    margin: 0 20px;
+    padding: 0 40px;
 }
 
 .dessert-more-area {
     justify-content: center;
+    margin-top: 20px;
 }
 
 .dessert-more a {
@@ -455,15 +447,16 @@ ul:last-child {
 
 .make-tea {
     background-image: url(../img/make-tea.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: 110%;
     background-position: left 60% bottom 85%;
-    height: 350px;
+
 }
 
 .make-tea-area {
     margin: auto;
     text-align: center;
+    padding-bottom: 50px;
 
 }
 
@@ -493,8 +486,157 @@ ul:last-child {
 
 @media screen and (max-width:768px) {
 
-    .slide img{
-        height: 250px;
+    .news h2,
+    .dessert h2,
+    .lineup h2 {
+        padding-bottom: 20px;
     }
-    
+
+    /* 輪播 */
+
+    .slide img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .navigation-manual {
+        width: 80%;
+    }
+
+    .navigation-auto {
+        width: 80%;
+    }
+
+    /* 最新消息 */
+
+    .news{
+        padding-bottom: 20px;
+    }
+
+    .news-area {
+        width: auto;
+        display: block;
+        margin: 0;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .news-tt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 40px 0;
+    }
+
+    .news-list {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        overflow: initial;
+    }
+
+    .news-list .time span:first-of-type {
+        color: #ffffff;
+        width: 50px;
+        padding: 0 8px;
+    }
+
+    .news-list ul {
+        border-bottom: 1.5px solid #2D4E36;
+        border-top: 1.5px solid #2D4E36;
+    }
+
+    .news-list ul:first-child,
+    ul:nth-child(3) {
+        border-top: none;
+        border-bottom: none;
+    }
+
+
+    .news-list ul:nth-child(4),
+    .news-list ul:nth-child(5),
+    .news-list ul:nth-child(6),
+    .news-list ul:nth-child(7),
+    .news-list ul:nth-child(8) {
+        display: none;
+    }
+
+    .list-item .arrow {
+        display: none;
+    }
+
+    .news-more-area {
+        width: auto;
+        margin-right: 5%;
+    }
+
+
+
+    .news-more,
+    .dessert-more,
+    .maketea-page {
+        width: 100px;
+        height: 20px;
+    }
+
+    /* 精選商品 */
+
+    .lineup-area {
+        width: auto;
+    }
+
+    .lineup-item {
+        width: 100%;
+    }
+
+
+    .lineup-pic {
+        margin: 30px;
+    }
+
+
+    .lineup-pic a::after {
+        display: none;
+    }
+
+    /* 甜點 */
+
+    .lineup-tt,
+    .dessert-tt {
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dessert-list {
+        width: auto;
+        flex-wrap: wrap;
+    }
+
+    .dessert-item {
+        width: calc(100% / 2);
+        /* border: 1px solid red; */
+        margin-block: 10px;
+    }
+
+    .dessert-pic img {
+        width: 100%;
+    }
+
+    .dessert-txt p {
+        padding: 0;
+    }
+
+    .dessert-more-area {
+        width: 80%;
+    }
+
+    .maketea-page {
+        margin: auto;
+        margin-top: 40px;
+    }
+
+
 }
