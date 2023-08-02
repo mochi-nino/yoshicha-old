@@ -24,7 +24,7 @@ a {
 
 .slides {
     width: 500%;
-    height: auto;
+    /* height: 400px; */
     display: flex;
 
 }
@@ -488,17 +488,13 @@ ul:last-child {
 
 /* 泡茶結束 */
 
-/* page-top */
 
-.page-top {
-    width: 70px;
-    height: 70px;
-    position: fixed;
-    right: 25px;
-    top: 800px;
-}
+/* 手機 */
 
+@media screen and (max-width:768px) {
 
-.page-top img {
-    width: 100%;
+    .slide img{
+        height: 250px;
+    }
+    
 }

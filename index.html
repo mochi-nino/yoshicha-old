@@ -22,18 +22,18 @@
                 <img src="img/logo.png" class="logo" alt="logo">
             </a>
             <!-- 左側工具列 -->
-            <div class="header-group">
-                <div class="cart">
+            <span class="header-group">
+                <span class="cart">
                     <a href="cart.html">
                         <i class="fa-solid fa-cart-shopping" style="color: #fff;" id="cart-i"></i>
                     </a>
-                </div>
-                <div class="login">
+                </span>
+                <span class="login">
                     <a href="">
                         <i class="fa-solid fa-user" style="color: #fff;" id="login-i"></i>
                     </a>
-                </div>
-            </div>
+                </span>
+            </span>
             <!-- 導覽列 -->
             <nav class="menu">
                 <div class="item">
@@ -72,6 +72,24 @@
                         <p>常見問題</p>
                     </a>
                 </div>
+            </nav>
+
+           <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+           </div>
+
+           <nav class="m-menu" id="m-menu">
+                <a class="m-link" href="news.html">最新消息</a>
+                <a class="m-link" href="about.html">關於我們</a>
+                <a class="m-link" href="shop.html">商品一覽</a>
+                <a class="m-link" href="maketea.html">簡單泡杯茶</a>
+                <a class="m-link" href="access.html">聯絡我們</a>
+                <a class="m-link" href="qaz.html">常見問題</a>
+                <a class="m-link" href="#">會員登入</a>
+                <a class="m-link" href="cart.html">購物車</a>
+           </nav>
     </header>
 
     <article>
@@ -84,13 +102,13 @@
                 <input type="radio" name="radio-btn" id="radio3">
                 <!-- 圖片 -->
                 <div class="slide first">
-                    <img src="img/header-pic01.jpg" alt="">
+                    <img src="img/header-pic01.jpg" alt="春茶新品">
                 </div>
                 <div class="slide">
-                    <img src="img/header-pic02.jpg" alt="">
+                    <img src="img/header-pic02.jpg" alt="優點">
                 </div>
                 <div class="slide">
-                    <img src="img/header-pic03.jpg" alt="">
+                    <img src="img/header-pic03.jpg" alt="茶包的環保材質">
                 </div>
                 <!-- 自動換張 -->
                 <div class="navigation-auto">
@@ -313,11 +331,9 @@
     </section>
 
 
-    <div class="page-top">
-        <a href="index.html">
-            <img src="img/pagetop1.svg" alt="page_top">
-        </a>
-    </div>
+    <button id="page-top">
+        <img src="img/pagetop1.svg" alt="page_top">
+    </button>
 
 
 
@@ -424,41 +440,9 @@
                 counter = 1;
             }
         }, 5000);
-
-        // nav換色
-        let navLink = document.getElementsByClassName("nav-link");
-        let navIcon = document.getElementsByClassName("navicon");
-        let navName = ["news", "about", "shop", "tea", "access", "qaz"];
-        for (let i = 0; i < navLink.length; i++) {
-            navLink[i].addEventListener("mouseover", function () {
-                navIcon[i].src = `img/${navName[i]}-org.png`;
-            })
-            navLink[i].addEventListener("mouseout", function () {
-                navIcon[i].src = `img/${navName[i]}.png`
-            })
-
-        }
-        // <!-- 購物車換色 -->
-        let cartI = document.getElementById("cart-i");
-        cartI.addEventListener("mouseover", function () {
-            cartI.style.color = "#dd7335"
-        })
-        cartI.addEventListener("mouseout", function () {
-            cartI.style.color = "#fff"
-        })
-
-        // 會員
-        let loginI = document.getElementById("login-i");
-        loginI.addEventListener("mouseover", function () {
-            loginI.style.color = "#dd7335"
-        })
-        loginI.addEventListener("mouseout", function () {
-            loginI.style.color = "#fff"
-        })
-
-
-
     </script>
+
+    <script src="js/header.js"></script>
 
 
 </body>

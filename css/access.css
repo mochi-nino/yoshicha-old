@@ -1,18 +1,26 @@
 .main {
-    background-image: url(../img/header-bg04.jpg);
+    background-image: url(../img/access-pic.jpg);
     background-size: cover;
+    width: 100%;
     background-repeat: no-repeat;
-    background-position: top center;
-    /* height: 255px; */
+    background-position: center center;
+    position: relative;
+    min-height: 450px;
+
 }
 
-
 .main .title {
+    background-image: url(../img/title-pic.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+    opacity: 0.8;
+}
+
+.main h1 {
+    line-height: 450px;
+    color: #0b5c22;
     text-align: center;
-    padding-block: 120px;
-    font-size: 30px;
-    color: #309D4E;
-    margin: auto;
 }
 
 /* 麵包屑 */

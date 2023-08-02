@@ -71,6 +71,23 @@
                         <p>常見問題</p>
                     </a>
                 </div>
+            </nav>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <nav class="m-menu" id="m-menu">
+                <a class="m-link" href="news.html">最新消息</a>
+                <a class="m-link" href="about.html">關於我們</a>
+                <a class="m-link" href="shop.html">商品一覽</a>
+                <a class="m-link" href="maketea.html">簡單泡杯茶</a>
+                <a class="m-link" href="access.html">聯絡我們</a>
+                <a class="m-link" href="qaz.html">常見問題</a>
+                <a class="m-link" href="#">會員登入</a>
+                <a class="m-link" href="cart.html">購物車</a>
+            </nav>
     </header>
 
     <article class="main">
@@ -94,46 +111,62 @@
                 <p>訂單確認</p>
             </div>
         </div>
-        <div class="title">
-            <h3>商品資料</h3>
-            <h3>單價</h3>
-            <h3>數量</h3>
-            <h3>小計</h3>
-        </div>
-        <div class="item 1">
-            <div class="box">
-                <div class="pic">
+        <table>
+            <tr class="title">
+                <th></th>
+                <th>商品</th>
+                <th>單價</th>
+                <th>數量</th>
+                <th>小計</th>
+                <th>刪除</th>
+            </tr>
+            <tr class="item 1">
+
+                <td>
                     <img src="img/grtea-bag-removebg-preview.png" alt="茉香綠茶">
-                </div>
-                <div class="tt">
-                    <h4>茉香綠茶</h4>
-                </div>
-            </div>
-            <p>NT$999</p>
-            <div class="quantity">
-                <button><i class="fa-solid fa-minus" style="color: #080808;"></i></button>
-                <input type="text" value="1">
-                <button><i class="fa-solid fa-plus" style="color: #080808;"></i></button>
-            </div>
-            <p>NT$999</p>
-        </div>
-        <div class="item 2">
-            <div class="box">
-                <div class="pic">
+                </td>
+                <td>
+                    茉香綠茶
+                </td>
+                <td>
+                    NT$999
+                </td>
+                <td class="quantity">
+                    <button><i class="fa-solid fa-minus" style="color: #080808;"></i></button>
+                    <input type="text" value="1">
+                    <button><i class="fa-solid fa-plus" style="color: #080808;"></i></button>
+                </td>
+                <td>
+                    NT$999
+                </td>
+                <td>
+                    <button class="del-btn">✖</button>
+                </td>
+            </tr>
+            <tr class="item 2">
+                <td>
                     <img src="img/jirinblacktea-bag-removebg-preview.png" alt="大吉嶺紅茶">
-                </div>
-                <div class="tt">
-                    <h4>大吉嶺紅茶</h4>
-                </div>
-            </div>
-            <p>NT$999</p>
-            <div class="quantity">
-                <button><i class="fa-solid fa-minus" style="color: #080808;"></i></button>
-                <input type="text" value="1">
-                <button><i class="fa-solid fa-plus" style="color: #080808;"></i></button>
-            </div>
-            <p>NT$999</p>
-        </div>
+                </td>
+                <td>
+                    大吉嶺紅茶
+                </td>
+                <td>
+                    NT$999
+                </td>
+                <td class="quantity">
+                    <button><i class="fa-solid fa-minus" style="color: #080808;"></i></button>
+                    <input type="text" value="1">
+                    <button><i class="fa-solid fa-plus" style="color: #080808;"></i></button>
+                </td>
+                <td>
+                    NT$999
+                </td>
+                <td>
+                    <button class="del-btn">✖</button>
+                </td>
+            </tr>
+        </table>
+
         <div class="cart_check_box">
             <section class="cart_metod">
                 <h3>寄送及付款方式</h3>
@@ -171,8 +204,7 @@
                     <p>合計</p>
                     <p>NT$2058</p>
                 </div>
-                <button class="check_out"> <a href=""></a>前往結帳</button>
-
+                <a href="#" class="check_out">前往結帳</a>
             </div>
         </div>
 

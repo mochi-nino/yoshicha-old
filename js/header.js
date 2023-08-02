@@ -28,3 +28,75 @@ loginI.addEventListener("mouseover", function () {
 loginI.addEventListener("mouseout", function () {
     loginI.style.color = "#fff"
 })
+
+
+//to top
+
+let pageTop = document.getElementById("page-top");
+
+
+pageTop.addEventListener("click", function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+})
+
+
+window.addEventListener("scroll", function () {
+    if (window.scrollY >= 400) {
+        pageTop.style.display = 'block';
+    } else {
+        pageTop.style.display = 'none';
+    }
+})
+
+
+// 手機板
+
+const hamburger = document.querySelector(".hamburger");
+const mMenu = document.querySelector(".m-menu");
+
+hamburger.addEventListener("click",function(){
+    hamburger.classList.toggle("active");
+    mMenu.classList.toggle("active");
+
+})
+
+document.querySelectorAll(".m-link").forEach(function(n){
+    n.addEventListener("click",function(){
+        hamburger.classList.remove("active");
+        mMenu.classList.remove("active");
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let hb = document.getElementById("hb");
+// let mMenu = document.getElementById("m-menu");
+// let hbSpan1 = document.getElementById("hb-span1")
+// let hbSpan2 = document.getElementById("hb-span2")
+// let hbSpan3 = document.getElementById("hb-span3")
+
+
+// hb.addEventListener("click", function () {
+//     if (mMenu.style.display === "none") {
+//         mMenu.style.display = "flex";
+//         hbSpan1.style.transform = "rotate(45deg) translate(0px, 0px)";
+//         hbSpan2.style.opacity = "0";
+//         hbSpan3.style.transform = "rotate(-45deg) translate(0px, 0px)";
+//     } else {
+//         mMenu.style.display = "none";
+//         hbSpan1.style.transform = "rotate(0deg)";
+//         hbSpan2.style.opacity = "1";
+//         hbSpan3.style.transform = "rotate(0deg)";
+//     }
+// });
