@@ -72,36 +72,3 @@ document.querySelectorAll(".m-link").forEach(function (n) {
     })
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let hb = document.getElementById("hb");
-// let mMenu = document.getElementById("m-menu");
-// let hbSpan1 = document.getElementById("hb-span1")
-// let hbSpan2 = document.getElementById("hb-span2")
-// let hbSpan3 = document.getElementById("hb-span3")
-
-
-// hb.addEventListener("click", function () {
-//     if (mMenu.style.display === "none") {
-//         mMenu.style.display = "flex";
-//         hbSpan1.style.transform = "rotate(45deg) translate(0px, 0px)";
-//         hbSpan2.style.opacity = "0";
-//         hbSpan3.style.transform = "rotate(-45deg) translate(0px, 0px)";
-//     } else {
-//         mMenu.style.display = "none";
-//         hbSpan1.style.transform = "rotate(0deg)";
-//         hbSpan2.style.opacity = "1";
-//         hbSpan3.style.transform = "rotate(0deg)";
-//     }
-// });

@@ -15,15 +15,19 @@ a {
     color: #333;
 }
 
-.main {
+.banner {
     height: auto;
+}
+
+
+.main {
     overflow: hidden;
     position: relative;
+    /* height: calc(100vh - 125px); */
 }
 
 .slides {
     width: 500%;
-    /* height: 400px; */
     display: flex;
 
 }
@@ -38,7 +42,7 @@ a {
 }
 
 .slide img {
-    height: auto;
+    /* height: 80%; */
     width: 100%;
     /* opacity: 0.5; */
 }
@@ -48,7 +52,7 @@ a {
     position: absolute;
     display: flex;
     width: 1200px;
-    margin-top: 640px;
+    /* margin-top: 640px; */
     justify-content: center;
     right: 0px;
     left: 0px;
@@ -85,6 +89,10 @@ a {
     margin-left: -40%;
 }
 
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
 /* 手動end */
 
 /* 自動 */
@@ -93,7 +101,7 @@ a {
     display: flex;
     position: absolute;
     width: 1200px;
-    margin-top: 640px;
+    /* margin-top: 640px; */
     justify-content: center;
     right: 0px;
     left: 0px;
@@ -123,6 +131,10 @@ a {
 }
 
 #radio3:checked~.navigation-auto .auto-btn3 {
+    background-color: #dd7335;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
     background-color: #dd7335;
 }
 
@@ -332,16 +344,14 @@ ul:last-child {
     margin-inline: 60px;
     margin-block: 50px;
     position: relative;
-
-
 }
+
 
 .lineup-pic img {
     width: 100%;
     vertical-align: top;
     border-radius: 50px 50px 50px 0px;
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .5));
-
 }
 
 .lineup-pic a::after {
@@ -406,16 +416,22 @@ ul:last-child {
 
 .dessert-pic {
     margin: 20px;
+    overflow: hidden;
+    border-radius: 60%;
+
+
 }
 
-.dessert-pic:hover {
-    opacity: 0.79;
+.dessert-pic img:hover {
+    scale: 1.1;
 }
 
 .dessert-pic img {
     vertical-align: top;
     border-radius: 60%;
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .5));
+    transition: scale 0.3s linear;
+
 }
 
 
@@ -469,7 +485,6 @@ ul:last-child {
 
 .make-tea-area p {
     color: #fff;
-    letter-spacing: 16.5%;
     line-height: 28px;
     margin-top: 10px;
 }
@@ -494,6 +509,16 @@ ul:last-child {
 
     /* 輪播 */
 
+    .manual-btn {
+        padding: 3px;
+    }
+
+    .navigation-auto label {
+        padding: 3px;
+    }
+
+
+
     .slide img {
         width: 100%;
         height: 300px;
@@ -509,7 +534,7 @@ ul:last-child {
 
     /* 最新消息 */
 
-    .news{
+    .news {
         padding-bottom: 20px;
     }
 
@@ -631,6 +656,14 @@ ul:last-child {
 
     .dessert-more-area {
         width: 80%;
+    }
+
+    .make-tea-area {
+        width: auto;
+    }
+
+    .make-tea-area p {
+        margin-inline: 40px;
     }
 
     .maketea-page {

@@ -74,13 +74,13 @@
                 </div>
             </nav>
 
-           <div class="hamburger">
+            <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-           </div>
+            </div>
 
-           <nav class="m-menu" id="m-menu">
+            <nav class="m-menu" id="m-menu">
                 <a class="m-link" href="news.html">最新消息</a>
                 <a class="m-link" href="about.html">關於我們</a>
                 <a class="m-link" href="shop.html">商品一覽</a>
@@ -89,10 +89,10 @@
                 <a class="m-link" href="qaz.html">常見問題</a>
                 <a class="m-link" href="#">會員登入</a>
                 <a class="m-link" href="cart.html">購物車</a>
-           </nav>
+            </nav>
     </header>
 
-    <article>
+    <article class="banner">
         <!-- 首頁圖 -->
         <div class="main">
             <div class="slides">
@@ -100,27 +100,33 @@
                 <input type="radio" name="radio-btn" id="radio1">
                 <input type="radio" name="radio-btn" id="radio2">
                 <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
                 <!-- 圖片 -->
                 <div class="slide first">
-                    <img src="img/header-pic01.jpg" alt="春茶新品">
+                    <img src="img/banner01.jpg" alt="春茶新品">
                 </div>
                 <div class="slide">
-                    <img src="img/header-pic02.jpg" alt="優點">
+                    <img src="img/banner03.jpg" alt="優點">
                 </div>
                 <div class="slide">
-                    <img src="img/header-pic03.jpg" alt="茶包的環保材質">
+                    <img src="img/banner02.jpg" alt="茶包的環保材質">
+                </div>
+                <div class="slide">
+                    <img src="img/banner04.jpg" alt="茶包的環保材質">
                 </div>
                 <!-- 自動換張 -->
                 <div class="navigation-auto">
                     <label class="auto-btn1"></label>
                     <label class="auto-btn2"></label>
                     <label class="auto-btn3"></label>
+                    <label class="auto-btn4"></label>
                 </div>
                 <!-- 手動換張 -->
                 <div class="navigation-manual">
                     <label for="radio1" class="manual-btn"></label>
                     <label for="radio2" class="manual-btn"></label>
                     <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
                 </div>
             </div>
         </div>
@@ -436,10 +442,10 @@
         setInterval(function () {
             document.getElementById('radio' + counter).checked = true;
             counter++;
-            if (counter > 3) {
+            if (counter > 4) {
                 counter = 1;
             }
-        }, 5000);
+        }, 6000);
     </script>
 
     <script src="js/header.js"></script>

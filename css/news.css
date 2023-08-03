@@ -22,7 +22,7 @@
     line-height: 450px;
     color: #0b5c22;
     text-align: center;
-    
+
     /* -webkit-text-stroke: .1px #2D4E36; */
 }
 
@@ -149,7 +149,12 @@
 
 .news-item .pic {
     margin-right: 70px;
+    overflow: hidden;
+    border-radius: 20px;
+}
 
+.news-item .pic img:hover {
+    scale: 1.1;
 }
 
 .news-item .pic img {
@@ -157,6 +162,7 @@
     width: 100%;
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .5));
     border-radius: 5px;
+    transition: scale 0.3s ease-in;
 }
 
 .news-item .txt {
