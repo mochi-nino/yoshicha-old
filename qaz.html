@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/qaz.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+        integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
 <body>
@@ -265,29 +268,42 @@
 
     <script>
 
-        let openbtn = document.getElementsByClassName("open-btn");
-        let qaztitle = document.getElementsByClassName("qaz-title");
-        let collapseitem = document.getElementsByClassName("qaz-item");
+        // let openbtn = document.getElementsByClassName("open-btn");
+        // let qaztitle = document.getElementsByClassName("qaz-title");
+        // let collapseitem = document.getElementsByClassName("qaz-item");
 
 
-        for (let i = 0; i < qaztitle.length; i++) {
-            qaztitle[i].addEventListener("click", function morebtn() {
-                // let collapseitem = this.nextElementSibling;
-                let computedStyle = window.getComputedStyle(collapseitem[i]);
-                let maxHeightValue = parseFloat(computedStyle.maxHeight);
-                if (maxHeightValue === 0) {
-                    collapseitem[i].style.maxHeight = "250px";
-                    openbtn[i].textContent = "－"
-                    qaztitle[i].style.backgroundColor = "#dd7335"
-                }
-                else {
-                    collapseitem[i].style.maxHeight = "0px";
-                    openbtn[i].textContent = "＋";
-                    qaztitle[i].style.backgroundColor = "#2D4E36"
-                }
-                console.log(collapseitem[i])
-            })
-        };
+        // for (let i = 0; i < qaztitle.length; i++) {
+        //     qaztitle[i].addEventListener("click", function morebtn() {
+        //         // let collapseitem = this.nextElementSibling;
+        //         let computedStyle = window.getComputedStyle(collapseitem[i]);
+        //         let maxHeightValue = parseFloat(computedStyle.maxHeight);
+        //         if (maxHeightValue === 0) {
+        //             collapseitem[i].style.maxHeight = "250px";
+        //             openbtn[i].textContent = "－"
+        //             qaztitle[i].style.backgroundColor = "#dd7335"
+        //         }
+        //         else {
+        //             collapseitem[i].style.maxHeight = "0px";
+        //             openbtn[i].textContent = "＋";
+        //             qaztitle[i].style.backgroundColor = "#2D4E36"
+        //         }
+        //         console.log(collapseitem[i])
+        //     })
+        // };
+
+
+        $('.qaz-title').click(function () {
+            $(this).next('.qaz-item').slideToggle(400);
+            if($(this).find('button').text() === "＋"){
+                 $(this).find('button').text('－');
+            }else{
+                $(this).find('button').text('＋');
+            }
+           
+
+
+        })
 
     </script>
 

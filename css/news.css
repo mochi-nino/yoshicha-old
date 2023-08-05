@@ -15,15 +15,12 @@
     background-position: center center;
     background-size: auto;
     opacity: 0.8;
-
 }
 
 .main h1 {
     line-height: 450px;
     color: #0b5c22;
     text-align: center;
-
-    /* -webkit-text-stroke: .1px #2D4E36; */
 }
 
 
@@ -147,6 +144,8 @@
     height: 200px;
 }
 
+
+
 .news-item .pic {
     margin-right: 70px;
     overflow: hidden;
@@ -214,15 +213,14 @@
 
 .news-item .txt p {
     padding-block: 5px;
-}
-
-
-.news-item .txt p:last-child {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical
+    -webkit-box-orient: vertical;
 }
+
+
+
 
 .news-page {
     display: flex;
@@ -241,4 +239,103 @@
 
 .news-page a:hover {
     color: #dd7335;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .main {}
+
+    .breadcrumb {
+        width: 100%;
+    }
+
+    .news-class {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: center;
+        padding: 2%;
+        margin-block: 5%
+    }
+
+    .news-class a {
+        margin-left: 5px;
+        margin-block: 0px;
+        width: 80px;
+        background-color: #eee;
+        border-radius: 50px;
+
+    }
+
+    .news-search {
+        margin-block: 20px;
+        grid-column: span 2;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    .news-list {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 2%;
+    }
+
+    .news-item {
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        border: 1px solid #ddd;
+        flex-wrap: nowrap;
+    }
+
+
+    .news-item .pic {
+        width: 60%;
+        margin-right: 2%;
+        padding-block: 5%;
+
+    }
+
+    .news-item .pic img {
+        border: 2px solid #ddd;
+        box-sizing: border-box;
+    }
+
+
+
+
+    .news span {
+        margin-left: 0;
+        display: block;
+        padding: 2px;
+        width: 60px;
+        margin-block: 2%;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+
+    .news-item .txt {
+        width: 100%;
+        padding-block: 2%;
+    }
+
+    .news-item h3 {
+        padding-block: 0px;
+        font-size: 16px;
+    }
+
+    .news-item .txt p {
+        display: none;
+    }
+
+
+    .news-page {
+        margin: 0;
+        padding: 5%;
+        width: 100%;
+    }
+
 }

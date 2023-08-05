@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+
 </head>
 
 <body>
@@ -438,17 +439,65 @@
                                     
                                     </script> -->
     <script>
-        var counter = 1;
-        setInterval(function () {
-            document.getElementById('radio' + counter).checked = true;
-            counter++;
-            if (counter > 4) {
-                counter = 1;
+        let counter = 1;
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(function () {
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if (counter > 4) {
+                    counter = 1;
+                }
+            }, 6000);
+        }
+
+
+        startAutoSlide()
+
+        let slides = document.querySelector('.slides')
+        let startX = 0;
+        let distX = 0;
+
+        slides.addEventListener('touchstart', function (e) {
+            clearInterval(autoSlideInterval);
+            let touch = e.touches[0];
+            startX = touch.clientX;
+        });
+
+        slides.addEventListener('touchmove', function (e) {
+            let touch = e.touches[0];
+            distX = startX - touch.clientX;
+        });
+
+        slides.addEventListener('touchend', function () {
+
+
+            if (distX > 50) {
+                counter++;
+                if (counter > 4) {
+                    counter = 1;
+                }
+            } else {
+                counter--;
+                if (counter < 1) {
+                    counter = 4;
+                }
+
             }
-        }, 6000);
+
+            document.getElementById('radio' + counter).checked = true;
+            startAutoSlide();
+        });
+
+
+
+
+
     </script>
 
+
+
     <script src="js/header.js"></script>
+
 
 
 </body>
