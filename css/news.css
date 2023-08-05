@@ -212,7 +212,7 @@
 
 
 .news-item .txt p {
-    padding-block: 5px;
+
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
