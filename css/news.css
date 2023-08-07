@@ -244,8 +244,7 @@
 
 @media screen and (max-width:768px) {
 
-    .main {}
-
+    
     .breadcrumb {
         width: 100%;
     }
@@ -301,6 +300,7 @@
     .news-item .pic img {
         border: 2px solid #ddd;
         box-sizing: border-box;
+
     }
 
 
@@ -309,10 +309,10 @@
     .news span {
         margin-left: 0;
         display: block;
-        padding: 2px;
+        padding: 0px;
         width: 60px;
-        margin-block: 2%;
-        font-size: 14px;
+        margin-block: 4%;
+        font-size: 12px;
         border-radius: 10px;
     }
 
@@ -334,8 +334,9 @@
 
     .news-page {
         margin: 0;
-        padding: 5%;
+        padding-block: 5%;
         width: 100%;
+
     }
 
 }
