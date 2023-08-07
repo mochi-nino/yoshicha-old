@@ -115,3 +115,35 @@
 .qaz-item p:first-of-type {
     margin-bottom: 30px;
 }
+
+@media screen and (max-width:768px) {
+
+    .main {
+        background-position: left center;
+    }
+
+
+
+    .breadcrumb {
+        width: 100%;
+    }
+
+    .qaz-wrap {
+        width: 100%;
+    }
+
+    .qaz-list {
+        width: 90%;
+    }
+
+    .qaz-title h3 {
+        font-size: 18px;
+    }
+
+    .qaz-item div {
+        padding: 5%;
+    }
+
+
+
+}

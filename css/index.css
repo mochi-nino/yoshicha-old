@@ -140,10 +140,20 @@ a {
 }
 
 
+.design {
+    position: absolute;
+    bottom: -4%;
+    width: 600px;
+    height: 400px;
+    background-image: url(../img/te.png);
+}
+
+
 /* 最新消息 */
 
 .news {
     height: 600px;
+    position: relative;
 
 }
 
@@ -272,7 +282,7 @@ ul:last-child {
     height: 7px;
     transform: rotate(-45deg);
     position: absolute;
-    z-index: 999;
+    z-index: 3;
     bottom: 6px;
     right: 6.5px;
 }

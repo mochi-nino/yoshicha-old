@@ -244,7 +244,7 @@
 
 @media screen and (max-width:768px) {
 
-    
+
     .breadcrumb {
         width: 100%;
     }
@@ -311,7 +311,7 @@
         display: block;
         padding: 0px;
         width: 60px;
-        margin-block: 4%;
+        margin-block: 3.5%;
         font-size: 12px;
         border-radius: 10px;
     }

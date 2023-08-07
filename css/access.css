@@ -152,3 +152,65 @@
     border-bottom: 1.5px solid #2D4E36;
     line-height: 80px;
 }
+
+iframe {
+    width: 600px;
+    height: 450px;
+}
+
+@media screen and (max-width:768px) {
+
+    .breadcrumb {
+        width: 100%;
+    }
+
+    .access {
+        width: 100%;
+    }
+
+    .access-warp .forms {
+        width: 100%;
+        box-sizing: border-box;
+        padding-inline: 8%;
+    }
+
+    .access-warp .forms .form-item {
+        margin: 0
+    }
+
+    .form-item input {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 10px 8px;
+    }
+
+    .form-item textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .map {
+        width: 90%;
+        border: 1px solid #2D4E36;
+    }
+
+
+    .shop {
+        flex-direction: column-reverse;
+    }
+
+    .shop .info {
+        margin: auto;
+    }
+
+    iframe {
+        width: 100%;
+        height: 300px
+    }
+
+
+
+
+
+}
